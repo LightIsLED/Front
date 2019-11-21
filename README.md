@@ -1,43 +1,25 @@
 # Front
 
-- 활용 라이브러리 :`React `, `apollo`, `graphql`
+-   활용 라이브러리 :`React`, `apollo`, `graphql`
 
-- Screens
+-   Screens
 
-  - splash
+1.  splash
 
-  ![splash](C:\Users\yangj\Desktop\0. Splash.png)
+![splash](./prototypes/0. Splash.png)
 
-  
+2.  signup
 
-  
+![signup](./prototypes/1. Sign up.png)
 
-  - signup
+3.  Tab1 : calendar
 
-    ![signup](C:\Users\yangj\Desktop\1. Sign up.png)
+![calendar](./prototypes/2. Calendar.png)
 
-  
+4.  Tab2 : medicine
 
-  
+![medicine](./prototypes/3. Medicine List.png)
 
-  - Tab1 : calendar
+5.  Tab3 : profile
 
-  ![calendar](C:\Users\yangj\Desktop\2. Calendar.png)
-
-  
-
-  
-
-  - Tab2 : medicine
-
-  ![medicine](C:\Users\yangj\Desktop\3. Medicine List.png)
-
-  
-
-  
-
-  
-
-  - Tab3 : profile
-
-  ![profile](C:\Users\yangj\Desktop\4. Profile - empty protector.png)
+![profile](./prototypes/4. Profile - empty protector.png)
