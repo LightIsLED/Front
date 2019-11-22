@@ -1,4 +1,5 @@
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createAppContainer } from "react-navigation"; //Version
+import { createStackNavigator } from "react-navigation-stack"; //Version
 import TabNavigation from "./TabNavigation";
 //import PhotoNavigation from "./PhotoNavigation";
 
