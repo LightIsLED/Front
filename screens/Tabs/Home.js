@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import Loader from "../../components/Loader";
 
 const View = styled.View`
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 `;
 
 const Text = styled.Text``;
 
 export default () => (
-  <View>
-    <Text>Home</Text>
-  </View>
+    <View>
+        <Loader />
+    </View>
 );

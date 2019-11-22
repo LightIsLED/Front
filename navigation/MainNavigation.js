@@ -1,14 +1,19 @@
 import { createAppContainer } from "react-navigation"; //Version
 import { createStackNavigator } from "react-navigation-stack"; //Version
 import TabNavigation from "./TabNavigation";
-//import PhotoNavigation from "./PhotoNavigation";
+import { stackStyles } from "./config";
 
 const MainNavigation = createStackNavigator(
     {
         TabNavigation
-        //PhotoNavigation
+        //PhotoNavigation,
     },
     {
+        defaultNavigationOptions: {
+            headerStyle: {
+                ...stackStyles
+            }
+        },
         headerMode: "none"
         //mode: "modal"
     }
