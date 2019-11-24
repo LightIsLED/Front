@@ -41,10 +41,6 @@ const UserProfile = ({ data }) => {
 };
 
 const styles = StyleSheet.create({
-    container: {
-        justifyContent: "center",
-        alignItems: "center"
-    },
     fieldContainer: {
         flexDirection: "row",
         justifyContent: "space-between",

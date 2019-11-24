@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { View, ScrollView } from "react-native";
-import styled from "styled-components";
+import { ScrollView } from "react-native";
 import Loader from "../../components/Loader";
 import UserProfile from "../../components/UserProfile";
 
