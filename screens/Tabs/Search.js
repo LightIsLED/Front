@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
 import { ScrollView } from "react-native";
 import Loader from "../../components/Loader";
-import MedicineList from "../../components/MedicineList";
+import ScheduleList from "../../components/ScheduleList";
 
 //To Do : data 불러오는 query 작성
 const GET_MEDICINES = () => {
     const data = [
         {
-            medicineID: 1,
-            medicineName: "고혈압약"
+            scheID: 1,
+            scheName: "고혈압약"
         },
         {
-            medicineID: 2,
-            medicineName: "당뇨약"
+            scheID: 2,
+            scheName: "당뇨약"
         }
     ];
     const loading = false;
@@ -23,7 +23,7 @@ export default ({ navigation }) => {
     const { loading, data } = GET_MEDICINES();
     return (
         <ScrollView>
-            {loading ? <Loader /> : <MedicineList data={data} />}
+            {loading ? <Loader /> : <ScheduleList data={data} />}
         </ScrollView>
     );
 };

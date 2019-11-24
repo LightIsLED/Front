@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 import constants from "../constants";
 import { Text, View, StyleSheet, FlatList } from "react-native";
 
-const MedicineList = ({ data }) => {
+const ScheduleList = ({ data }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>복용 중인 약</Text>
             <FlatList
                 data={data}
                 renderItem={({ item }) => (
-                    <View style={styles.medicine}>
-                        <Text style={styles.item}>{item.medicineName}</Text>
+                    <View style={styles.schedule}>
+                        <Text style={styles.item}>{item.scheName}</Text>
                     </View>
                 )}
                 keyExtractor={(item, index) => index.toString()}
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         margin: 20,
         fontSize: 22
     },
-    medicine: {
+    schedule: {
         marginTop: 0,
         marginBottom: 20,
         marginLeft: 50,
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default MedicineList;
+export default ScheduleList;
