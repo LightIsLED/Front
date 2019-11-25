@@ -47,6 +47,17 @@ moment.updateLocale("fr", {
     weekdaysShort: ["일", "월", "화", "수", "목", "금", "토"]
 });
 
+// List Component
+class List extends Component {
+    render() {
+        return (
+            <View style={{ alignItems: "center" }}>
+                <Text>Hello {this.props.date}</Text>
+            </View>
+        );
+    }
+}
+
 // Calendar Component
 class CalendarView extends Component {
     constructor(props) {
@@ -79,14 +90,9 @@ class CalendarView extends Component {
                         this.calendar = ref;
                     }}
                 />
-                <Button
-                    title="Hit me and check out the console"
-                    onPress={() => {
-                        console.log(
-                            this.calendar.getSelectedDate().format("YYYY-MM-DD")
-                        );
-                    }}
-                ></Button>
+                <List
+                    date={this.calendar.getSelectedDate().format("YYYY-MM-DD")}
+                ></List>
             </View>
         );
     }
