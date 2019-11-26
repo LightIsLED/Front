@@ -21,16 +21,33 @@ const HeaderTitle = () => {
 };
 
 const stackFactory = (initialRoute, customConfig) =>
-    createStackNavigator({
-        InitialRoute: {
-            screen: initialRoute,
-            navigationOptions: {
-                ...customConfig,
-                headerStyle: { ...stackStyles },
-                headerLayoutPreset: "center"
+    createStackNavigator(
+        {
+            InitialRoute: {
+                screen: initialRoute,
+                navigationOptions: {
+                    ...customConfig
+                }
+            },
+            //  ScheduleDetail: {
+            //     screen: ScheduleDetail,
+            //     navigationOptions: {
+            //       title: "Schedule"
+            //     }
+            //   },
+            MedicineDetail: {
+                screen: MedicineDetail,
+                navigationOptions: {}
+            }
+        },
+        {
+            defaultNavigationOptions: {
+                headerBackTitle: null,
+                headerTintColor: styles.blackColor,
+                headerStyle: { ...stackStyles }
             }
         }
-    });
+    );
 
 export default createBottomTabNavigator(
     {

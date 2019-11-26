@@ -6,7 +6,6 @@ import { stackStyles } from "./config";
 const MainNavigation = createStackNavigator(
     {
         TabNavigation
-        //PhotoNavigation,
     },
     {
         defaultNavigationOptions: {
@@ -15,7 +14,6 @@ const MainNavigation = createStackNavigator(
             }
         },
         headerMode: "none"
-        //mode: "modal"
     }
 );
 
